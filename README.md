@@ -11,7 +11,6 @@ The objective is to transform transactional customer data into actionable busine
 - How does customer purchasing behavior differ across segments?
 - Which customers contribute the highest CLTV?
 - How do purchase frequency, order value, and customer lifespan influence customer value?
-- Which areas provide the greatest opportunity for improving long-term customer profitability?
 
 The project combines **data preparation, exploratory analysis, customer segmentation, cohort retention analysis, CLTV analysis, and interactive Power BI dashboards**.
 
