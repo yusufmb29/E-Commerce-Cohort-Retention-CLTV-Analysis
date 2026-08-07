@@ -120,7 +120,6 @@ Customers were divided into three value-based segments:
 - **Medium Value**
 - **Low Value**
 
-The segmentation was used throughout the dashboards to compare customer value, order behavior, repeat purchasing and lifespan.
 
 ### 🔄 Cohort Retention Analysis
 
