@@ -100,6 +100,7 @@ The transactional data was prepared for customer-level and time-based analysis.
 - Prepared cohort-related date attributes
 - Prepared variables required for customer segmentation
 - Created analytical measures required for CLTV and retention analysis
+- Removed unnecessary columns
 
 The cleaned data was then used for both **Python analysis** and **Power BI reporting**.
 
