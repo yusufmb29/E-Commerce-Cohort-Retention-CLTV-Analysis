@@ -1,37 +1,453 @@
-# E-Commerce-Cohort-Retention-CLTV-Analysis
-## Executive Problem Statement
-Acquiring new customers is up to five times more expensive than retaining existing ones.
-High-growth startups often boast about rapid user acquisition but fail to track if those users
-actually stick around. If a business loses customers faster than it acquires them, it will inevitably
-collapse.
-The objective of this project is to perform a deep-dive Cohort Analysis to understand user
-retention and calculate Customer Lifetime Value (CLTV). By grouping users based on their
-acquisition month, the intern will identify exactly when users churn and provide data-backed
-recommendations to improve retention.
-## Business Objectives and Key Performance Indicators
-The strategic goal is to identify churn patterns. Does a specific product feature cause users to
-stay? Do users acquired during Black Friday churn faster than others? Success is quantified by
-producing a clean Cohort Retention Heatmap and an accurate predictive model for the
-12-month CLTV of different user segments.
+# Customer Retention & Customer Lifetime Value Analysis
 
-## Four-Week Engineering Roadmap
-### Week 1: Transactional Data Cleaning and Wrangling
-The intern will ingest a raw transactional dataset (e.g., an online retail or SaaS subscription log).
-Using Python, the intern must filter out refunded/failed transactions, handle missing user IDs,
-and calculate the "Cohort Month" (the month of the first transaction) for every unique user.
-### Week 2: Building the Cohort Retention Matrix
-Week two is heavily focused on data manipulation. The intern will use Pandas groupby and
-pivot_table functions (or SQL pivot techniques) to build a retention matrix. The matrix must
-calculate the absolute number of retained users and the percentage retention rate for Month 0,
-Month 1, Month 2, etc.
-### Week 3: Customer Lifetime Value (CLTV) Calculation
-The third week introduces financial metrics. The intern will segment the cohorts (e.g., by
-acquisition channel or geographic region) and calculate the Average Order Value (AOV) and
-Purchase Frequency. Using these metrics, the intern will calculate the historical CLTV for each
-segment.
-### Week 4: Visualization and Strategic Insights
-The final week focuses on storytelling. The intern will use Seaborn/Matplotlib or a BI tool to plot
-the Retention Heatmap and line charts showing retention decay curves. The final GitHub
-submission must include a detailed README explaining the business implications (e.g.,
-"Retention drops by 40% in Month 2; recommend implementing an automated re-engagement
-email sequence").
+## 📌 Project Overview
+
+This project analyzes customer purchasing behavior, retention patterns, customer segmentation, and Customer Lifetime Value (CLTV) using **Python** and **Microsoft Power BI**.
+
+The objective is to transform transactional customer data into actionable business insights that help answer questions such as:
+
+- How effectively are customers being retained over time?
+- Which customer segments generate the most value?
+- How does customer purchasing behavior differ across segments?
+- Which customers contribute the highest CLTV?
+- How do purchase frequency, order value, and customer lifespan influence customer value?
+- Which areas provide the greatest opportunity for improving long-term customer profitability?
+
+The project combines **data preparation, exploratory analysis, customer segmentation, cohort retention analysis, CLTV analysis, and interactive Power BI dashboards**.
+
+---
+
+## 🎯 Business Problem
+
+A business may generate substantial revenue while still facing challenges such as:
+
+- Low repeat-purchase behavior
+- Declining customer retention over time
+- Unequal contribution of different customer segments
+- Limited understanding of customer lifetime value
+- Difficulty identifying high-value customers
+- Low purchase frequency among a large proportion of customers
+
+This project addresses these challenges by analyzing the customer journey from **first purchase → repeat purchase → retention → lifetime value**.
+
+---
+
+## 🔍 Key Business Questions
+
+1. **How is customer retention changing across acquisition cohorts?**
+2. **Which customer segments contribute the most revenue and CLTV?**
+3. **What differentiates high-value customers from medium- and low-value customers?**
+4. **How do Average Order Value and purchase frequency relate to customer value?**
+5. **Which customers have the highest CLTV and therefore represent the greatest value to the business?**
+6. **Where should the business focus its retention and customer-value improvement efforts?**
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Tool | Purpose |
+|---|---|
+| **Python** | Data cleaning, transformation, exploratory analysis and analytical modelling |
+| **Pandas** | Data manipulation and preparation |
+| **NumPy** | Numerical calculations |
+| **Matplotlib / Seaborn** | Exploratory data visualization |
+| **Jupyter Notebook** | Python-based analysis |
+| **Power BI** | Interactive dashboards and business reporting |
+| **DAX** | Measures, KPIs and analytical calculations |
+| **GitHub** | Project documentation and version control |
+
+---
+
+## 📊 Project Workflow
+
+```text
+Raw Transaction Data
+        ↓
+Data Cleaning & Preparation
+        ↓
+Exploratory Data Analysis
+        ↓
+Customer-Level Aggregation
+        ↓
+Customer Segmentation
+        ↓
+Cohort & Retention Analysis
+        ↓
+CLTV Analysis
+        ↓
+Python Visualizations
+        ↓
+Power BI Data Modelling
+        ↓
+Interactive Dashboards
+        ↓
+Business Insights & Recommendations
+```
+
+---
+
+# 1. Data Preparation & Cleaning
+
+The transactional data was prepared for customer-level and time-based analysis.
+
+### Main preparation activities
+
+- Checked and handled missing values
+- Reviewed duplicate records
+- Validated data types
+- Converted transaction dates into usable date fields
+- Created customer-level aggregations
+- Derived order and purchase metrics
+- Prepared cohort-related date attributes
+- Prepared variables required for customer segmentation
+- Created analytical measures required for CLTV and retention analysis
+
+The cleaned data was then used for both **Python analysis** and **Power BI reporting**.
+
+---
+
+# 2. Python Analysis
+
+Python was used to perform the analytical groundwork before building the Power BI dashboards.
+
+### Major areas analyzed
+
+### 👥 Customer Segmentation
+
+Customers were divided into three value-based segments:
+
+- **High Value**
+- **Medium Value**
+- **Low Value**
+
+The segmentation was used throughout the dashboards to compare customer value, order behavior, repeat purchasing and lifespan.
+
+### 🔄 Cohort Retention Analysis
+
+Customers were grouped according to their acquisition/first-purchase cohort.
+
+Retention was then evaluated across subsequent periods to identify:
+
+- Retention decline over time
+- Differences between customer cohorts
+- Strength of repeat purchasing
+- Long-term customer engagement patterns
+
+### 💎 Customer Lifetime Value
+
+CLTV analysis was performed to understand the economic value generated by customers over their relationship with the business.
+
+The analysis considered customer purchasing behavior such as:
+
+- Revenue
+- Purchase frequency
+- Average Order Value
+- Customer lifespan
+- Repeat purchasing
+
+### 📈 Additional Customer Metrics
+
+The project also examines:
+
+- Total customers
+- Total orders
+- Revenue
+- Average Order Value (AOV)
+- Purchase frequency
+- Repeat rate
+- Customer lifespan
+- CLTV
+- Segment-level customer contribution
+
+---
+
+# 3. Power BI Data Model
+
+The analytical data was modelled in Power BI to support interactive filtering and dashboard reporting.
+
+The model enables analysis across dimensions such as:
+
+- Date
+- Customer
+- Product / Category
+- State
+- Payment Type
+- Customer Segment
+
+Interactive filters allow users to explore the analysis by relevant business dimensions.
+
+---
+
+# 4. Power BI Dashboards
+
+The project contains **two interactive dashboard pages**.
+
+## 📌 Dashboard 1 — Cohort Retention Overview
+
+This dashboard focuses on overall customer performance and retention.
+
+### Main KPIs
+
+- **Revenue:** $19.78M
+- **Customers:** 93.36K
+- **Repeat Rate:** 3.00%
+- **Average Order Value:** $204.98
+- **Orders / Customer:** 1.03
+
+### Main visuals
+
+- Monthly Revenue & Orders Trend
+- Cohort Retention Matrix
+- Top Product Categories by Revenue
+- Customer Segmentation
+- Interactive State and Category filters
+
+### Key observations
+
+- The business generated approximately **$19.78M in revenue** from around **93.36K customers**.
+- Overall repeat purchasing is relatively low, with a **3% repeat rate**.
+- Average order value is approximately **$204.98**.
+- Purchase behavior is close to one order per customer, reflected by **1.03 orders per customer**.
+- The cohort matrix shows that retention generally decreases as customers move further away from their initial purchase period.
+- Customer value is unevenly distributed across the three customer segments.
+
+### Dashboard Screenshot
+
+![Cohort Retention Overview](Cohort%20Retention%20Overview.png)
+
+---
+
+## 📌 Dashboard 2 — Customer Lifetime Value Analysis
+
+This dashboard focuses on customer value, purchasing behavior and segment profitability.
+
+### Main KPIs
+
+- **Total Customers:** 93.36K
+- **Total Orders:** 96K
+- **Total CLTV:** $19.78M
+- **Purchase Frequency:** 1.03
+
+### Main visuals
+
+- Customer Segment Summary
+- Top 10 Customers by CLTV
+- AOV by Customer Segment
+- Average Customer Lifespan
+- CLTV vs Purchase Frequency
+- Segment-level analytical table
+
+### Segment-level findings
+
+| Segment | CLTV | Avg. Order Value | Avg. Lifespan | Repeat Rate |
+|---|---:|---:|---:|---:|
+| **High Value** | $14.63M | $415.71 | 6.02 | 6.48% |
+| **Medium Value** | $3.58M | $111.41 | 1.66 | 2.17% |
+| **Low Value** | $1.57M | $51.56 | 0.23 | 0.36% |
+
+### Key observations
+
+- The **High Value segment is the largest contributor to CLTV**, generating approximately **$14.63M**.
+- High Value customers have a substantially higher **AOV of $415.71**.
+- High Value customers also show the longest average customer lifespan at approximately **6.02**.
+- The High Value segment has the highest repeat rate at **6.48%**, compared with **2.17%** for Medium Value and **0.36%** for Low Value customers.
+- The relationship between purchase frequency and CLTV highlights the importance of encouraging customers to purchase more frequently.
+- The top-customer analysis identifies individual customers with significantly higher CLTV than the rest of the customer base.
+
+### Dashboard Screenshot
+
+![Customer Lifetime Value Analysis](Customer%20Lifetime%20Value%20Analysis.png)
+
+---
+
+# 5. Key Business Insights
+
+### 💰 1. Revenue is strong, but repeat purchasing is a major opportunity
+
+The business generates **$19.78M in revenue**, but the overall repeat rate is only **3%**. This suggests significant potential for increasing revenue through customer retention rather than relying only on new customer acquisition.
+
+### 💎 2. High Value customers drive the majority of customer lifetime value
+
+The High Value segment contributes approximately **$14.63M CLTV**, making it the most commercially important customer group.
+
+### 🛒 3. Higher order value is strongly associated with higher customer value
+
+High Value customers have an AOV of approximately **$415.71**, compared with **$111.41** for Medium Value and **$51.56** for Low Value customers.
+
+### ⏳ 4. Customer lifespan is an important differentiator
+
+High Value customers have an average lifespan of approximately **6.02**, substantially higher than Medium Value customers at **1.66** and Low Value customers at **0.23**.
+
+### 🔄 5. Retention and repeat purchasing are critical growth levers
+
+The difference in repeat rates between High Value and Low Value customers indicates that encouraging second and subsequent purchases could have a meaningful impact on CLTV.
+
+### 📉 6. Cohort retention declines as customer age increases
+
+The cohort matrix demonstrates that customer retention generally falls across later cohort periods, highlighting the need for targeted post-purchase engagement and retention strategies.
+
+---
+
+# 6. Business Recommendations
+
+Based on the analysis, the following actions can be considered:
+
+### 1. Strengthen repeat-purchase campaigns
+
+Develop targeted campaigns designed to move first-time customers toward their second purchase.
+
+Examples:
+
+- Personalized offers
+- Post-purchase recommendations
+- Reminder campaigns
+- Product cross-selling
+- Limited-time incentives
+
+### 2. Protect High Value customers
+
+High Value customers represent the largest CLTV contribution.
+
+Recommended actions:
+
+- Loyalty programs
+- Personalized recommendations
+- VIP benefits
+- Early access to products/offers
+- Dedicated retention campaigns
+
+### 3. Increase AOV among Medium Value customers
+
+Medium Value customers represent an opportunity to move customers toward the High Value segment.
+
+Potential strategies:
+
+- Product bundles
+- Cross-selling
+- Volume discounts
+- Free-shipping thresholds
+- Related-product recommendations
+
+### 4. Reactivate Low Value customers
+
+Low Value customers have the lowest AOV, lifespan and repeat rate.
+
+Instead of treating all customers equally, targeted reactivation campaigns can be used to identify customers with potential for conversion into repeat buyers.
+
+### 5. Monitor cohort retention continuously
+
+Cohort analysis should be used as an ongoing KPI to determine whether new customer cohorts are becoming more valuable and more retained over time.
+
+---
+
+# 7. Dashboard Features
+
+The Power BI dashboards provide interactive analysis through filters such as:
+
+- 📅 Date
+- 🏷️ Category
+- 📍 State
+- 💳 Payment Type
+
+Users can interact with the dashboard to investigate customer behavior across different time periods and business dimensions.
+
+---
+
+# 8. Project Deliverables
+
+This project includes:
+
+- ✅ Data cleaning and preparation
+- ✅ Exploratory Data Analysis
+- ✅ Customer segmentation
+- ✅ Cohort retention analysis
+- ✅ CLTV analysis
+- ✅ Customer lifespan analysis
+- ✅ Purchase frequency analysis
+- ✅ Power BI data modelling
+- ✅ Interactive Power BI dashboards
+- ✅ Business insights
+- ✅ Business recommendations
+- ✅ Project presentation
+
+---
+
+# 9. Power BI File
+
+The `.pbix` file is hosted externally because GitHub's browser upload has a file-size restriction for large binary files.
+
+### 📥 Download Power BI Dashboard
+
+**[Download the Power BI `.pbix` file](PASTE_YOUR_PBIX_LINK_HERE)**
+
+> Replace `PASTE_YOUR_PBIX_LINK_HERE` with your Google Drive, OneDrive, or other file-hosting link.
+
+---
+
+# 10. Project Presentation
+
+The project presentation documents the complete analytical journey, including:
+
+- Problem Statement
+- Project Overview
+- Dataset
+- Data Cleaning
+- Data Modelling
+- Python Analysis
+- Customer Segmentation
+- Cohort Retention Analysis
+- CLTV Analysis
+- Power BI Dashboards
+- Key Business Insights
+- Recommendations
+- Conclusion
+
+**[View / Download Project Presentation](PASTE_PRESENTATION_LINK_HERE)**
+
+---
+
+# 📁 Suggested Repository Structure
+
+```text
+Customer-Retention-CLTV-Analysis/
+│
+├── README.md
+│
+├── Data/
+│   └── cleaned_dataset.csv
+│
+├── Python/
+│   ├── Customer_Segmentation.ipynb
+│   ├── Cohort_Retention_Analysis.ipynb
+│   └── CLTV_Analysis.ipynb
+│
+├── PowerBI/
+│   ├── Cohort Retention Overview.png
+│   ├── Customer Lifetime Value Analysis.png
+│   └── PowerBI_Dashboard_Link.txt
+│
+├── Presentation/
+│   └── Customer_Retention_CLTV_Analysis.pdf
+│
+└── Documentation/
+    └── Data_Dictionary.xlsx
+```
+
+---
+
+# 📌 Conclusion
+
+This project demonstrates how transactional customer data can be transformed into a practical customer analytics solution using **Python and Power BI**.
+
+The analysis highlights a clear business opportunity: **increase customer retention and purchasing frequency while protecting and expanding the High Value customer segment**.
+
+By combining cohort analysis with CLTV and customer segmentation, the business can move beyond simply measuring revenue and begin understanding **which customers create long-term value and how that value can be increased**.
+
+---
+
+## 👨‍💻 Project
+
+**Customer Retention & Customer Lifetime Value Analysis**
+
+**Tools:** Python • Pandas • NumPy • Matplotlib • Seaborn • Power BI • DAX • GitHub
+
