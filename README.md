@@ -358,17 +358,17 @@ Users can interact with the dashboard to investigate customer behavior across di
 
 This project includes:
 
-- ✅ Data cleaning and preparation
-- ✅ Exploratory Data Analysis
-- ✅ Customer segmentation
-- ✅ Cohort retention analysis
-- ✅ CLTV analysis
-- ✅ Customer lifespan analysis
-- ✅ Purchase frequency analysis
-- ✅ Power BI data modelling
-- ✅ Interactive Power BI dashboards
-- ✅ Business insights
-- ✅ Business recommendations
+- ✅ Project Requirements 
+- ✅ Raw Olist E-commerce Brazilian Data
+- ✅ Cleaned Dataset Notebook
+- ✅ EDA Notebook 
+- ✅ CLTV analysis Notebook 
+- ✅ Cohort Retention Analysis Notebook 
+- ✅ Power BI file
+- ✅ Dashboard Images
+- ✅ Python Charts
+- ✅ Executive Report
+- ✅ Business Insights and Recommendations
 - ✅ Project presentation
 
 ---
