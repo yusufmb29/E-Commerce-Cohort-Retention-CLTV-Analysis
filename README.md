@@ -174,7 +174,7 @@ The following Fact and Dimension tables were build such as:
 - dim_date
 - fact_cohort_retention
 
-Interactive filters allow users to explore the analysis by relevant business dimensions.
+Relationships were build between the tables for integration and filtering.Interactive filters allow users to explore the analysis by relevant business dimensions.
 
 ---
 
