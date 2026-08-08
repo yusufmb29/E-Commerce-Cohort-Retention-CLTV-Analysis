@@ -213,13 +213,13 @@ This dashboard focuses on overall customer performance and retention.
 
 ### Dashboard Screenshot
 
-![Cohort Retention Overview](Cohort%20Retention%20Overview.png)
+![Cohort Retention Overview](Images/Cohort%20Retention%20Overview.png)
 
 ---
 
 ## 📌 Dashboard 2 — Customer Lifetime Value Analysis
 
-This dashboard focuses on customer value, purchasing behavior and segment profitability.
+This dashboard focuses on customer value, purchasing behaviour and segment profitability.
 
 ### Main KPIs
 
@@ -256,7 +256,7 @@ This dashboard focuses on customer value, purchasing behavior and segment profit
 
 ### Dashboard Screenshot
 
-![Customer Lifetime Value Analysis](Customer%20Lifetime%20Value%20Analysis.png)
+![Customer Lifetime Value Analysis](Images/Customer%20Lifetime%20Value%20Analysis.png)
 
 ---
 
