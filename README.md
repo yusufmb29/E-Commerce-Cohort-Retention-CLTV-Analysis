@@ -446,7 +446,7 @@ By combining cohort analysis with CLTV and customer segmentation, the business c
 
 ## 👨‍💻 Project
 
-**Customer Retention & Customer Lifetime Value Analysis**
+**E-commerce Cohort Retention and CLTV Analysis Project**
 
 **Tools:** Python • Pandas • NumPy • Matplotlib • Seaborn • Power BI • DAX • GitHub
 
