@@ -164,14 +164,15 @@ The project also examines:
 
 The analytical data was modelled in Power BI to support interactive filtering and dashboard reporting.
 
-The model enables analysis across dimensions such as:
+The following Fact and Dimension tables were build such as:
 
-- Date
-- Customer
-- Product / Category
-- State
-- Payment Type
-- Customer Segment
+- fact_sales
+- dim_customers
+- dim_products
+- dim_orders
+- dim_customer_cltv
+- dim_date
+- fact_cohort_retention
 
 Interactive filters allow users to explore the analysis by relevant business dimensions.
 
