@@ -348,6 +348,7 @@ The Power BI dashboards provide interactive analysis through filters such as:
 - 🏷️ Category
 - 📍 State
 - 💳 Payment Type
+- 👤 Segments
 
 Users can interact with the dashboard to investigate customer behavior across different time periods and business dimensions.
 
