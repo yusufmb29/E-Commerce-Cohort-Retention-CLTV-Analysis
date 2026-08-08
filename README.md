@@ -383,53 +383,43 @@ The `.pbix` file is hosted externally because GitHub's browser upload has a file
 
 ---
 
-# 10. Project Presentation
-
-The project presentation documents the complete analytical journey, including:
-
-- Problem Statement
-- Project Overview
-- Dataset
-- Data Cleaning
-- Data Modelling
-- Python Analysis
-- Customer Segmentation
-- Cohort Retention Analysis
-- CLTV Analysis
-- Power BI Dashboards
-- Key Business Insights
-- Recommendations
-- Conclusion
-
-**[View / Download Project Presentation](PASTE_PRESENTATION_LINK_HERE)**
-
----
-
 # 📁 Suggested Repository Structure
 
 ```text
-Customer-Retention-CLTV-Analysis/
+E-Commerce-Cohort-Retenton-CLTV-Analysis/
 │
 ├── README.md
 │
-├── Data/
+├── .gitignore
+│
+├── Requirements/
+│   └── Python Analysis Charts Images
+│
+├── Cleaned Data/
 │   └── cleaned_dataset.csv
 │
-├── Python/
-│   ├── Customer_Segmentation.ipynb
-│   ├── Cohort_Retention_Analysis.ipynb
-│   └── CLTV_Analysis.ipynb
+├── Raw Data/
+│   └── raw_dataset.csv
 │
-├── PowerBI/
+├── Notebooks/
+│   ├── 01_Data_Cleaning_ETL.ipynb
+│   ├── 02_Exploratory_Data_Analysis.ipynb
+│   ├── 03_cohort_analysis.ipynb
+│   └── 04_CLTV_Analysis.ipynb
+│
+├── Images/
 │   ├── Cohort Retention Overview.png
 │   ├── Customer Lifetime Value Analysis.png
-│   └── PowerBI_Dashboard_Link.txt
+│   └── Data Modeling.png
+│
+├── Python Charts/
+│   └── Python Analysis Charts Images
 │
 ├── Presentation/
-│   └── Customer_Retention_CLTV_Analysis.pdf
+│   └── Cohort Retention & CLTV Analysis.pdf
 │
-└── Documentation/
-    └── Data_Dictionary.xlsx
+└── Docs/
+    └── Cohort Retention Analysis Executive Report.xlsx
 ```
 
 ---
