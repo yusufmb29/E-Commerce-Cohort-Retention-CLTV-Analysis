@@ -392,9 +392,6 @@ E-Commerce-Cohort-Retenton-CLTV-Analysis/
 │
 ├── .gitignore
 │
-├── Requirements/
-│   └── Python Analysis Charts Images
-│
 ├── Cleaned Data/
 │   └── cleaned_dataset.csv
 │
