@@ -379,9 +379,7 @@ The `.pbix` file is hosted externally because GitHub's browser upload has a file
 
 ### 📥 Download Power BI Dashboard
 
-**[Download the Power BI `.pbix` file](PASTE_YOUR_PBIX_LINK_HERE)**
-
-> Replace `PASTE_YOUR_PBIX_LINK_HERE` with your Google Drive, OneDrive, or other file-hosting link.
+**[Download the Power BI `.pbix` file][(](https://drive.google.com/file/d/1-Jb-Uf3uoZ0jPGQjHJrt_5DaJIixDpcA/view?usp=drivesdk))**
 
 ---
 
