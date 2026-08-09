@@ -176,6 +176,8 @@ The following Fact and Dimension tables were build such as:
 
 Relationships were build between the tables for integration and filtering.Interactive filters allow users to explore the analysis by relevant business dimensions.
 
+![Cohort Retention Overview](Images/Data%Modelling.png)
+
 ---
 
 # 4. Power BI Dashboards
