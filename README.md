@@ -162,7 +162,7 @@ The project also examines:
 
 # 3. Power BI Data Model
 
-The analytical data was modelled in Power BI to support interactive filtering and dashboard reporting.
+The Master Transaction Table fact_sales and other cleaned and per-prossessed tables were then loaded to Power BI and Data Model was built using Star Schema Architecture. The analytical data was modelled in Power BI to support interactive filtering and dashboard reporting.
 
 The following Fact and Dimension tables were build such as:
 
