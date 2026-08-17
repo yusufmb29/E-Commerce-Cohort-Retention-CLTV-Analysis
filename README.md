@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project analyzes customer purchasing behavior, retention patterns, customer segmentation, and Customer Lifetime Value (CLTV) using **Python** and **Microsoft Power BI**.
+This project analyses customer purchasing behaviour, cohort retention patterns, customer segmentation, and Customer Lifetime Value (CLTV) using **Python** and **Microsoft Power BI**.
 
 The objective is to transform transactional customer data into actionable business insights that help answer questions such as:
 
