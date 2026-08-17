@@ -47,7 +47,7 @@ This project addresses these challenges by analyzing the customer journey from *
 | Tool | Purpose |
 |---|---|
 | **Python** | Data cleaning, transformation, exploratory analysis and analytical modelling |
-| **Pandas** | Data manipulation and preparation |
+| **Pandas** | Data manipulation and pre-processing |
 | **NumPy** | Numerical calculations |
 | **Matplotlib / Seaborn** | Exploratory data visualization |
 | **Jupyter Notebook** | Python-based analysis |
