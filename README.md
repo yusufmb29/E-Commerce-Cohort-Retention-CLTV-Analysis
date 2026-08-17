@@ -1,4 +1,4 @@
-# Customer Retention & Customer Lifetime Value Analysis
+# E-commerce Cohort Retention & Customer Lifetime Value Analysis
 
 ## 📌 Project Overview
 
