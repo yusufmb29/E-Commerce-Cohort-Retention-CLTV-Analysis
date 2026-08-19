@@ -395,10 +395,14 @@ E-Commerce-Cohort-Retenton-CLTV-Analysis/
 ├── .gitignore
 │
 ├── Cleaned Data/
-│   └── cleaned_dataset.csv
 │
-├── Raw Data/
-│   └── raw_dataset.csv
+├── Documents/
+│   └── Cohort Analysis Executive Report.pdf
+│
+├── Images/
+│   ├── Cohort Retention Overview.png
+│   ├── Customer Lifetime Value Analysis.png
+│   └── Data Modeling.png
 │
 ├── Notebooks/
 │   ├── 01_Data_Cleaning_ETL.ipynb
@@ -406,19 +410,14 @@ E-Commerce-Cohort-Retenton-CLTV-Analysis/
 │   ├── 03_cohort_analysis.ipynb
 │   └── 04_CLTV_Analysis.ipynb
 │
-├── Images/
-│   ├── Cohort Retention Overview.png
-│   ├── Customer Lifetime Value Analysis.png
-│   └── Data Modeling.png
+├── Presentation/
+│   └── Cohort Retention & CLTV Analysis PPT.ppt
 │
 ├── Python Charts/
 │   └── Python Analysis Charts Images
 │
-├── Presentation/
-│   └── Cohort Retention & CLTV Analysis.pdf
-│
-└── Docs/
-    └── Cohort Retention Analysis Executive Report.xlsx
+└── Raw Data/
+   
 ```
 
 ---
